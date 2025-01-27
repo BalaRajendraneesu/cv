@@ -1,0 +1,25 @@
+project:
+  name: "Silicon"
+
+software:
+  ide: "Simplicity Studio"
+
+hardware:
+  components:
+    - "EFM8UB2 Universal Busy Bee"
+    - "ESP32"
+    - "TFT LCD"
+    - "Joystick"
+    - "Temperature Sensor"
+    - "BMP280"
+    - "MQTT"
+
+description:
+  overview: |
+    Display sensor data on the TFT LCD and send it to the ESP32 via UART. The ESP32 then transmits the data to an MQTT server over Wi-Fi.
+
+responsibility:
+  tasks:
+    - "Implemented BMP280 sensor data processing and TFT LCD display."
+    - "Established UART communication between EFM8UB2 Universal Busy Bee and ESP32."
+    - "Configured ESP32 to forward sensor data to an MQTT server.
